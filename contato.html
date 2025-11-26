@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <header>
+     <nav class="nav-container"> 
+     <table style="width:100%;" border ="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><a href="inicio.html">Início</a></td>
+    <td align="center"><a href="noticia.html">Notícias</a></td>
+    <td align="center"><a href="contato.html">Contato</a></td>
+  </tr>
+</table>
+</header>
+<body>
+    <div class="form-container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="campo-grupo">
+                 <label for="nome">Nome:</label>
+                 <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) 99999-9999" pattern="^\(\d{2}\) \d{5}-\d{4}$"  title="Digite o telefone no formato (99) 99999-9999" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="" disabled selected>Selecione um assunto...</option>
+                        <option value="redacao">Falar com a Redação</option>
+                        <option value="comercial">Anúncios / Comercial</option>
+                        <option value="suporte">Suporte Técnico</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+
+                <div class="campo-grupo">
+                    <label>Tipo de Contato:</label>
+                    <div class="opcoes-radio">
+                        <label class="radio-label">
+                            <input type="radio" name="tipo_contato" value="sugestao" required> Sugestão
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="tipo_contato" value="reclamacao"> Reclamação
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="tipo_contato" value="elogio"> Elogio
+                        </label>
+                    </div>
+                </div>
+                <div class="campo-grupo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                </div>
+                <div class="campo-grupo termos-container">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="termos" required>
+                        Li e aceito os termos de uso e política de privacidade.
+                    </label>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+
+            </form>
+        </div>
+<footer>
+        <p>&copy; 2025 ImpactoNews. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

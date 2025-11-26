@@ -1,3 +1,15 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.h1{
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    
+}
 header{
     background-color: rgb(255, 25, 25);
     padding: 15px 0;
@@ -46,12 +58,6 @@ header nav a {
     font-size: 16px;
     transition: color 0.3s ease;
 }
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
 
 .caixas {
     display: flex;
@@ -59,7 +65,13 @@ body{
     gap: 30px; 
     max-width: 800px; 
     margin: 30px auto; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 20px auto; 
 }
+
 .caixa-item {
     flex: 1; 
     background-color: white; 
@@ -78,4 +90,270 @@ body{
     font-size: 1em;
     color: #555;
     margin-top: 5px;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 550px; 
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+.conteudo-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    text-align: center;
+    max-width: 900px;
+    padding: 20px;
+    z-index: 2; 
+}
+
+.conteudo-hero h1 {
+    font-size: 3.5em;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+        
+.conteudo-hero p {
+    font-size: 1.4em;
+     margin-bottom: 30px;
+}
+.hero-texto {
+    flex: 1; 
+}
+
+.hero-imagem {
+    flex: 1;
+}
+
+
+.hero-cta {
+    background-color: #e60000;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+        }
+        
+.hero-cta:hover {
+    background-color: #b30000;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    overflow: hidden;
+}
+
+.video-container iframe {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 30px 0; 
+}
+.caixa-noticia {
+    background-color: #f2f2f2; 
+    padding: 30px;
+    border-radius: 8px; 
+    margin-bottom: 50px;
+}
+
+.secao-topo {
+    display: flex;
+    gap: 30px; 
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.coluna-imagem {
+    flex: 1; 
+}
+
+.coluna-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.coluna-texto-lateral {
+    flex: 1; 
+    font-size: 1.1em;
+    font-weight: 500; 
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+.secao-baixo {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.secao-baixo p {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .secao-topo {
+        flex-direction: column;
+    }
+    
+    .titulo-principal {
+        font-size: 1.5em;
+    }
+}
+main {
+    flex: 1;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #f0f0f0; 
+    width: 100%;
+    max-width: 700px; 
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.campo-grupo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #000;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #dcdcdc;
+    border: none;
+    border-radius: 4px; 
+    font-size: 1rem;
+    font-family: inherit;
+    color: #333;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #cfcfcf; 
+    box-shadow: 0 0 0 2px #aaa;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.opcoes-radio {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.radio-label, .checkbox-label {
+    font-weight: normal; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+    accent-color: #e60000; 
+    width: 18px;
+    height: 18px;
+}
+
+.termos-container {
+    margin-top: 30px;
+}
+
+.btn-enviar {
+    background-color: #e60000; 
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #cc0000;
+}
+
+footer {
+    background-color: #e60000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;    
+    position: relative; 
+    left: 0;
+    bottom: 0;
+}
+.area-download {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.botao-pdf {
+    display: inline-block;
+    background-color: #e60000;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.botao-pdf:hover {
+    background-color: #b30000;
 }
