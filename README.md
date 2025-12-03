@@ -14,3 +14,5 @@ O site é totalmente adaptável:
 * **Desktop:** Menu horizontal e Grid de 3 colunas.
 * **Tablet:** Grid de 2 colunas.
 * **Mobile:** Menu compacto, Grid de 1 coluna e sidebar ajustada.
+
+  Feito por **Lívia Matos**
